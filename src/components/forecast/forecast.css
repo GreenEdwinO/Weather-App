@@ -33,8 +33,9 @@
 }
 
 .day:hover {
-  color: red;
+  color: blue;
   font-size: 1rem;
+  font-weight: 550;
 }
 
 .description {

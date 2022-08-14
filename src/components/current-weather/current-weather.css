@@ -47,10 +47,6 @@
   margin: 10px 0;
 }
 
-.temperature:hover {
-  font-size: 64px;
-}
-
 .details {
   width: 100%;
   padding-left: 20px;
@@ -63,20 +59,22 @@
 
 .parameter-label {
   text-align: left;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 12px;
-  margin: 4px 0;
+  margin: 2px 0;
 }
 
 .ben{
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   color:rgb(251, 220, 237);
+  letter-spacing: 1px;
 }
 .parameter-value {
   text-align: right;
   font-weight: 600;
   font-size: 12px;
+  margin: 2px 0;
 }
 
 .parameter-label.top {
