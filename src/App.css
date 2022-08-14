@@ -16,13 +16,27 @@ footer {
   border-bottom: 0;
 }
 
+footer:hover {
+  font-size: 1rem;
+  transform: 5s;
+  color: blue;
+}
+
 @media screen and (max-width: 460px) {
+  .container {
+    margin: 20px 1%;
+  }
+
   .container h1 {
-    font-size: 1rem;
-    max-width: 400px;
-    margin: 10px 5%;
+    font-size: 1.2rem;
+    margin: 20px 1%;
   }
   footer {
     font-size: .6rem;
+  }
+  footer:hover {
+    font-size: .8rem;
+    transform: 5s;
+    color: blue;
   }
 }
