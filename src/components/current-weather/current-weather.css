@@ -24,6 +24,10 @@
   letter-spacing: 1px;
 }
 
+.city:hover {
+  font-weight: 600;
+  font-size: 22px;
+}
 .weather-description {
   font-weight: 400;
   font-size: 14px;
@@ -41,6 +45,10 @@
   width: auto;
   letter-spacing: -5px;
   margin: 10px 0;
+}
+
+.temperature:hover {
+  font-size: 64px;
 }
 
 .details {
@@ -63,7 +71,7 @@
 .ben{
   font-size: 16px;
   font-weight: 700;
-  color:rgb(236, 112, 178);
+  color:rgb(251, 220, 237);
 }
 .parameter-value {
   text-align: right;
