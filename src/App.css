@@ -8,6 +8,14 @@
   text-align: center;
 }
 
+.time {
+  text-align: center;
+  justify-self: center;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 0;
+}
+
 footer {
   font-size: .7rem;
   text-align: center;
@@ -29,7 +37,11 @@ footer:hover {
 
   .container h1 {
     font-size: 1.2rem;
-    margin: 20px 1%;
+    margin: 10px 1%;
+  }
+  .time {
+    font-size: .9rem;
+    margin-bottom: 10px;
   }
   footer {
     font-size: .6rem;
