@@ -1,38 +1,65 @@
 const Time = () => {
-  const date = new Date()
-  const day = date.getDate()
-  const month = date.getMonth()
-  const year = date.getFullYear()
-  const hours = date.getHours()
+  const date = new Date();
+  const day = date.getDate();
+  const month = date.getMonth() + 1;
+  const year = date.getFullYear();
+  const hours = date.getHours();
 
-
-  let sup 
+  let sup;
   if (day === 1 || 21 || 31) {
-  sup = "st"
+    sup = "st";
   }
-  if (day === 4 || 5 || 6 || 7|| 8 || 9 || 10 || 11 || 12 || 13 || 14 || 15 || 16 || 17 || 18 || 19 || 20 || 24 || 25 || 26 || 27 || 28 || 29 || 30) {
-    sup = "th"
-  }
-  else if (day === 2 || 22) {
-    sup = "nd"
-  }
-  else if (day === 3 || 23) {
-    sup = "rd"
+  if (
+    day === 4 ||
+    5 ||
+    6 ||
+    7 ||
+    8 ||
+    9 ||
+    10 ||
+    11 ||
+    12 ||
+    13 ||
+    14 ||
+    15 ||
+    16 ||
+    17 ||
+    18 ||
+    19 ||
+    20 ||
+    24 ||
+    25 ||
+    26 ||
+    27 ||
+    28 ||
+    29 ||
+    30
+  ) {
+    sup = "th";
+  } else if (day === 2 || 22) {
+    sup = "nd";
+  } else if (day === 3 || 23) {
+    sup = "rd";
   }
 
-
-  let timeOfDay
+  let timeOfDay;
   if (hours < 12) {
-    timeOfDay = "morning"
+    timeOfDay = "morning";
   } else if (hours >= 12 && hours < 17) {
-    timeOfDay = "afternoon"
+    timeOfDay = "afternoon";
   } else {
-    timeOfDay = "evening"
+    timeOfDay = "evening";
   }
 
   return (
-    <div>Today {day}<sup><small>{sup}</small></sup>-{month}-{year}. Good{timeOfDay}</div>
-  )
-}
+    <div>
+      Today, {day}
+      <sup>
+        <small>{sup}</small>
+      </sup>
+      -{month}-{year}. Good{timeOfDay} 🙂
+    </div>
+  );
+};
 
 export default Time;
