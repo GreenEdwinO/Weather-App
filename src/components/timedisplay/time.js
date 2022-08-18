@@ -1,7 +1,7 @@
 const Time = () => {
   const date = new Date();
   const day = date.getDate();
-  const month = date.getMonth() + 1;
+  const month= date.toLocaleString('En', {month: 'short'});
   const year = date.getFullYear();
   const hours = date.getHours();
 
@@ -55,9 +55,9 @@ const Time = () => {
     <div>
       Today, {day}
       <sup>
-        <small>{sup}</small>
+        <small>{sup} </small>
       </sup>
-      -{month}-{year}. Good{timeOfDay} 🙂
+        {month}, {year}. Good{timeOfDay} 🙂
     </div>
   );
 };
