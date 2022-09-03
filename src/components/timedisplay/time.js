@@ -1,7 +1,7 @@
 const Time = () => {
   const date = new Date();
   const day = date.getDate();
-  const month= date.toLocaleString('En', {month: 'short'});
+  const month = date.toLocaleString('En', {month: 'short'}); //month in figure was month = date.getmonth()
   const year = date.getFullYear();
   const hours = date.getHours();
 
