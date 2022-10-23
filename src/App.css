@@ -34,17 +34,21 @@ footer:hover {
   .container {
     margin: 20px 1%;
   }
+
   .container h1 {
     font-size: 1.2rem;
     margin: 10px 1%;
   }
+
   .time {
-    font-size: .9rem;
+    font-size: 1rem;
     margin-bottom: 10px;
   }
+
   footer {
-    font-size: .6rem;
+    font-size: .8rem;
   }
+
   footer:hover {
     font-size: .8rem;
     transform: 5s;

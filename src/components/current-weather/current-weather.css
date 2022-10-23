@@ -1,7 +1,8 @@
 .weather {
   width: 300px;
   border-radius: 8px;
-  box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
+  /* box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%); */
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   color: #fff;
   background-color: rgb(36, 7, 152);
   opacity: .9;
@@ -28,6 +29,7 @@
   font-weight: 600;
   font-size: 22px;
 }
+
 .weather-description {
   font-weight: 400;
   font-size: 14px;
@@ -37,6 +39,19 @@
 
 .weather-icon {
   width: 100px;
+  animation: float 4s linear infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0rem);
+  }
+
+  50% {
+    transform: translateY(2.1rem);
+  }
 }
 
 .temperature {
@@ -64,12 +79,13 @@
   margin: 2px 0;
 }
 
-.ben{
+.ben {
   font-size: 14px;
   font-weight: 700;
-  color:rgb(251, 220, 237);
+  color: rgb(251, 220, 237);
   letter-spacing: 1px;
 }
+
 .parameter-value {
   text-align: right;
   font-weight: 600;

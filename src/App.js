@@ -39,10 +39,14 @@ console.log(forecast);
   return (
     <div className="container">
       <h1>DETAILED WEATHER INFO AND FORECAST</h1>
+
       <p className="time"><Time /></p>
+
       <Search onSearchChange={handleOnSearchChange} />
+
       {currentWeather && <CurrentWeather data={currentWeather} />}
       {forecast && <Forecast data={forecast} />}
+      
       <footer>Developed by <a href="https://greenojegwo.netlify.app">Green Ojegwo</a></footer>
     </div>
   );
